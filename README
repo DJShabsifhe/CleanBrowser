@@ -3,11 +3,11 @@
 
 A powerful Chrome extension that automatically removes unwanted elements from web pages through intelligent keyword matching, giving you a clean and focused browsing experience.
 
+![插件界面](screenshots/usage.png)
+
 ---
 
 ## 🚀 功能特点 | Features
-
-![插件界面](screenshots/popup-interface.png)
 
 - ✅ **智能关键词匹配** - 精确识别包含指定关键词的页面元素
 - ✅ **自动移除功能** - 页面加载时自动移除匹配元素，无需手动操作
@@ -17,8 +17,6 @@ A powerful Chrome extension that automatically removes unwanted elements from we
 - ✅ **一键恢复功能** - 随时恢复被移除的元素
 - ✅ **数据持久化** - 关键词列表自动保存，跨会话有效
 - ✅ **SPA应用支持** - 支持单页应用的路由变化检测
-
-![移除效果对比](screenshots/before-after-demo.png)
 
 - ✅ **Smart Keyword Matching** - Precisely identify page elements containing specified keywords
 - ✅ **Auto Removal** - Automatically remove matching elements on page load without manual intervention
@@ -30,8 +28,6 @@ A powerful Chrome extension that automatically removes unwanted elements from we
 - ✅ **SPA Support** - Support for single-page application route change detection
 
 ## 🎯 使用方法 | Usage
-
-![关键词管理](screenshots/usage.png)
 
 #### 添加关键词
 1. 点击浏览器工具栏中的插件图标
