@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Clean Browser - 元素移除器",
+  "version": "1.0",
+  "description": "根据关键词移除页面元素的Chrome插件",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Clean Browser - 元素移除器"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 

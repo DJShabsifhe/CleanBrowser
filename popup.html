@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 20px;
+        }
+        
+        .section {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #545b62;
+        }
+        
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+        
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .keywords-list {
+            max-height: 100px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #f8f9fa;
+        }
+        
+        .keyword-item {
+            background-color: #e9ecef;
+            padding: 3px 8px;
+            margin: 2px;
+            border-radius: 3px;
+            display: inline-block;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h3>🗑️ Clean Browser</h3>
+    </div>
+    
+    <div class="section">
+        <label for="keyword">输入要移除的关键词：</label>
+        <input type="text" id="keyword" placeholder="例如：广告, advertisement">
+    </div>
+    
+    <div class="section">
+        <button id="addKeyword" class="btn-primary">添加关键词</button>
+        <button id="removeElements" class="btn-secondary">手动移除元素</button>
+        <button id="restoreElements" class="btn-danger">恢复页面</button>
+    </div>
+    
+    <div class="section">
+        <div style="background: #e3f2fd; padding: 8px; border-radius: 4px; font-size: 12px; color: #1565c0;">
+            💡 添加关键词后，每次访问页面都会自动移除匹配的元素
+        </div>
+    </div>
+    
+    <div class="section">
+        <label>当前关键词列表：</label>
+        <div id="keywordsList" class="keywords-list"></div>
+    </div>
+    
+    <div id="status" class="status" style="display: none;"></div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 
